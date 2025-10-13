@@ -71,4 +71,9 @@
 	--radius-3xl: 1rem;     /* (16px) */
 	--radius-4xl: 1.25rem;  /* (20px) */
 	--radius-5xl: 1.5rem;   /* (24px) */
+
+	/* Letter Spacing */
+	--tracking-tight:  -0.03125rem; /* (-0.5px) */
+	--tracking-tighter: -0.0625rem; /* (-1px) */
+	--tracking-tightest: -0.125rem; /* (-2px) */
 }
