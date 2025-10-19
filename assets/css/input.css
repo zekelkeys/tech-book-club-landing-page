@@ -76,4 +76,24 @@
 	--tracking-tight:  -0.03125rem; /* (-0.5px) */
 	--tracking-tighter: -0.0625rem; /* (-1px) */
 	--tracking-tightest: -0.125rem; /* (-2px) */
+
+	/* Typography */
+	--text-4xl: 3.875rem; /* (62px) */
+	--text-4xl--line-height: 120%;
+	--text-3xl: 3.125rem; /* (50px) */
+	--text-3xl--line-height: 130%;
+	--text-2xl: 2.375rem; /* (38px) */
+	--text-2xl--line-height: 120%;
+	--text-xl: 2.125rem; /* (34px) */
+	--text-xl--line-height: 130%;
+	--text-lg: 1.5rem; /* (24px) */
+	--text-lg--line-height: 110%;
+	--text-base: 1.25rem; /* (20px) */
+	--text-base--line-height: 140%;
+	--text-small: 1.125rem; /* (18px) */
+	--text-small--line-height: 130%;
+	--text-xs: 1rem; /* (16px) */
+	--text-xs--line-height: 130%;
+	--text-2xs: 0.875rem; /* (14px) */
+	--text-2xs--line-height: 120%;
 }
