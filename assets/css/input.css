@@ -66,6 +66,11 @@
 	--color-light-salmon-500: #FEA36F;
 
 	/* Radius */
+
+
+	--radius-sm:  0.25rem;  /*  (4px) */
+	--radius-md:  0.375rem; /*  (6px) */
+	--radius-lg:  0.5rem;   /*  (8px) */
 	--radius-xl:  0.625rem; /* (10px) */
 	--radius-2xl: 0.75rem;  /* (12px) */
 	--radius-3xl: 1rem;     /* (16px) */
