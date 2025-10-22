@@ -53,7 +53,7 @@
 @theme {
 	/* Fonts */
 	--font-inter:   Inter, sans-serif;
-	--font-martian: Martian Mono, monospace;
+	--font-martian-mono: Martian Mono, monospace;
 	
 	/* Colors */
 	--color-neutral-0:   #FFFFFF;
