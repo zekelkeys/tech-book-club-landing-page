@@ -67,6 +67,8 @@
     --font-inter: Inter, sans-serif;
     --font-martian-mono: Martian Mono, monospace;
     --tracking-tightest: -0.125rem;
+    --text-2xs: 0.875rem;
+    --text-2xs--line-height: 120%;
     --text-small: 1.125rem;
     --text-small--line-height: 130%;
   }
@@ -254,6 +256,10 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-2xs {
+    font-size: var(--text-2xs);
+    line-height: var(--tw-leading, var(--text-2xs--line-height));
   }
   .text-base {
     font-size: var(--text-base);
