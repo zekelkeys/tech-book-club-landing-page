@@ -42,6 +42,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-neutral-100: #FAF5F3;
     --color-neutral-700: #385159;
     --color-neutral-900: #062630;
@@ -237,6 +238,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
@@ -299,6 +303,9 @@
   .bg-neutral-900 {
     background-color: var(--color-neutral-900);
   }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
   .bg-\[linear-gradient\(107deg\,_\#FF9A60_-11\.37\%\,_\#062630_61\.84\%\)\] {
     background-image: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
   }
@@ -311,6 +318,9 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -319,9 +329,6 @@
   }
   .font-martian-mono {
     font-family: var(--font-martian-mono);
-  }
-  .font-mono {
-    font-family: var(--font-mono);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -401,6 +408,11 @@
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .md\:mt-8 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 8);
+    }
   }
   .md\:px-8 {
     @media (width >= 48rem) {
