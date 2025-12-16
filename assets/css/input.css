@@ -82,7 +82,7 @@
 	
 	/* Typography */
 	--text-2xs: 0.875rem; /* (14px) */
-	--text-2xs--line-height: 120%;
+	--text-2xs--line-height: 1.2;
 	--text-xs: 1rem; /* (16px) */
 	--text-xs--line-height: 130%;
 	--text-sm: 1.125rem; /* (18px) */
@@ -99,4 +99,6 @@
 	--text-3xl--line-height: 130%;
 	--text-4xl: 3.875rem; /* (62px) */
 	--text-4xl--line-height: 120%;
+
+	--breakpoint-lg: 1360px;
 }
