@@ -51,6 +51,10 @@
 @import "tailwindcss";
 
 @theme {
+	/* Breakpoints */
+  	--breakpoint-md: 768px;
+  	--breakpoint-lg: 1360px;
+
 	/* Fonts */
 	--font-inter:   Inter, sans-serif;
 	--font-martian-mono: Martian Mono, monospace;
@@ -99,6 +103,5 @@
 	--text-3xl--line-height: 130%;
 	--text-4xl: 3.875rem; /* (62px) */
 	--text-4xl--line-height: 120%;
-
-	--breakpoint-lg: 1360px;
 }
+
