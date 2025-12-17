@@ -69,7 +69,9 @@
     --font-weight-bold: 700;
     --tracking-tighter: -0.0625rem;
     --tracking-tight: -0.03125rem;
+    --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.625rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-inter: Inter, sans-serif;
@@ -230,6 +232,9 @@
   }
 }
 @layer utilities {
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
+  }
   .m-6\.25 {
     margin: calc(var(--spacing) * 6.25);
   }
@@ -251,6 +256,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .h-\[40px\] {
     height: 40px;
   }
@@ -266,11 +274,20 @@
   .max-w-\[388px\] {
     max-width: 388px;
   }
-  .max-w-\[1504px\] {
-    max-width: 1504px;
+  .max-w-\[950px\] {
+    max-width: 950px;
+  }
+  .flex-grow {
+    flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -287,8 +304,18 @@
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -417,17 +444,44 @@
   .not-italic {
     font-style: normal;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .lg\:max-w-\[540px\] {
+    @media (width >= 1360px) {
+      max-width: 540px;
+    }
+  }
+  .lg\:max-w-\[1504px\] {
+    @media (width >= 1360px) {
+      max-width: 1504px;
+    }
   }
   .lg\:flex-row {
     @media (width >= 1360px) {
       flex-direction: row;
     }
   }
+  .lg\:rounded-lg {
+    @media (width >= 1360px) {
+      border-radius: var(--radius-lg);
+    }
+  }
   .lg\:pt-20 {
     @media (width >= 1360px) {
       padding-top: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:rounded-xl {
+    @media (width >= 48rem) {
+      border-radius: var(--radius-xl);
     }
   }
   .md\:px-8 {
@@ -537,6 +591,11 @@
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -662,6 +721,7 @@
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;

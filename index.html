@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/css/output.css">
   <title>Frontend Mentor | Tech book club</title>
 </head>
-<body class="bg-neutral-0 font-inter mx-auto max-w-[1504px] text-neutral-700">
+<body class="bg-neutral-0 font-inter mx-auto max-w-[950px] text-neutral-700 lg:max-w-[1504px]">
 	<div class="px-4 md:px-8">
 		<!-- Header/Hero Section -->
 		<header>
@@ -55,7 +55,10 @@
 					</div>
 				</div>
 				<!-- Hero Image -->
-				<img src="assets/images/image-hero-mobile.webp" alt="">
+				<picture class="overflow-hidden rounded-md md:rounded-xl lg:max-w-[540px] lg:rounded-lg">
+					<source media="(min-width: 768px)" srcset="assets/images/image-hero-tablet.webp" width="1408" height="1596">
+					<img  src="assets/images/image-hero-mobile.webp" width="686" height="744" alt="Side view head portrait of bearded black male">
+				</picture>
 			</section>
 		</header>
 		<!-- Main Section -->
