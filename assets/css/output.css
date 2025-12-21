@@ -42,8 +42,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
-    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-neutral-100: #FAF5F3;
     --color-neutral-700: #385159;
@@ -266,6 +264,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .inline-block {
     display: inline-block;
   }
@@ -281,9 +282,6 @@
   .w-\[110px\] {
     width: 110px;
   }
-  .w-\[530px\] {
-    width: 530px;
-  }
   .w-full {
     width: 100%;
   }
@@ -292,6 +290,15 @@
   }
   .max-w-\[388px\] {
     max-width: 388px;
+  }
+  .max-w-\[450px\] {
+    max-width: 450px;
+  }
+  .max-w-\[500px\] {
+    max-width: 500px;
+  }
+  .max-w-\[530px\] {
+    max-width: 530px;
   }
   .max-w-\[896px\] {
     max-width: 896px;
@@ -323,9 +330,6 @@
   .items-center {
     align-items: center;
   }
-  .justify-between {
-    justify-content: space-between;
-  }
   .justify-center {
     justify-content: center;
   }
@@ -334,9 +338,6 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -387,9 +388,6 @@
   }
   .bg-neutral-900 {
     background-color: var(--color-neutral-900);
-  }
-  .bg-red-200 {
-    background-color: var(--color-red-200);
   }
   .bg-\[linear-gradient\(107deg\,_\#FF9A60_-11\.37\%\,_\#062630_61\.84\%\)\] {
     background-image: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
@@ -525,6 +523,11 @@
       margin-bottom: calc(var(--spacing) * 8);
     }
   }
+  .md\:max-w-\[530px\] {
+    @media (width >= 768px) {
+      max-width: 530px;
+    }
+  }
   .md\:gap-6 {
     @media (width >= 768px) {
       gap: calc(var(--spacing) * 6);
@@ -654,6 +657,11 @@
       max-width: 430px;
     }
   }
+  .lg\:max-w-\[530px\] {
+    @media (width >= 1360px) {
+      max-width: 530px;
+    }
+  }
   .lg\:max-w-\[540px\] {
     @media (width >= 1360px) {
       max-width: 540px;
@@ -684,9 +692,9 @@
       flex-direction: row-reverse;
     }
   }
-  .lg\:gap-10 {
+  .lg\:items-center {
     @media (width >= 1360px) {
-      gap: calc(var(--spacing) * 10);
+      align-items: center;
     }
   }
   .lg\:gap-20 {
