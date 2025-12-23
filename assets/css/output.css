@@ -309,6 +309,9 @@
   .w-full {
     width: 100%;
   }
+  .max-w-\[375px\] {
+    max-width: 375px;
+  }
   .max-w-\[380px\] {
     max-width: 380px;
   }
@@ -317,6 +320,9 @@
   }
   .max-w-\[450px\] {
     max-width: 450px;
+  }
+  .max-w-\[640px\] {
+    max-width: 640px;
   }
   .max-w-\[896px\] {
     max-width: 896px;
@@ -359,6 +365,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
@@ -427,12 +436,6 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
-  }
-  .px-16 {
-    padding-inline: calc(var(--spacing) * 16);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
@@ -512,6 +515,12 @@
     --tw-tracking: var(--tracking-tightest);
     letter-spacing: var(--tracking-tightest);
   }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .text-neutral-0 {
     color: var(--color-neutral-0);
   }
@@ -571,6 +580,11 @@
   .md\:max-w-\[530px\] {
     @media (width >= 768px) {
       max-width: 530px;
+    }
+  }
+  .md\:max-w-\[640px\] {
+    @media (width >= 768px) {
+      max-width: 640px;
     }
   }
   .md\:gap-6 {
@@ -747,6 +761,11 @@
       max-width: 1170px;
     }
   }
+  .lg\:max-w-none {
+    @media (width >= 1360px) {
+      max-width: none;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 1360px) {
       flex-direction: row;
@@ -760,6 +779,11 @@
   .lg\:items-center {
     @media (width >= 1360px) {
       align-items: center;
+    }
+  }
+  .lg\:gap-16 {
+    @media (width >= 1360px) {
+      gap: calc(var(--spacing) * 16);
     }
   }
   .lg\:gap-20 {
@@ -787,11 +811,6 @@
       padding-inline: calc(var(--spacing) * 0);
     }
   }
-  .lg\:px-15 {
-    @media (width >= 1360px) {
-      padding-inline: calc(var(--spacing) * 15);
-    }
-  }
   .lg\:px-\[60px\] {
     @media (width >= 1360px) {
       padding-inline: 60px;
@@ -800,6 +819,11 @@
   .lg\:pt-20 {
     @media (width >= 1360px) {
       padding-top: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:text-center {
+    @media (width >= 1360px) {
+      text-align: center;
     }
   }
 }
